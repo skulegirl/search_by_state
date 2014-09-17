@@ -1,0 +1,16 @@
+name = search_by_state
+description = views to allow listings of sites by country/state
+core = 7.x
+package = BDW Features
+version = 7.x-1.0
+project = search_by_state
+dependencies[] = entity
+dependencies[] = field
+dependencies[] = gmap
+dependencies[] = location
+dependencies[] = user
+dependencies[] = views
+features[features_api][] = api:2
+features[views][] = listings_by_state
+features[views][] = statelisting
+features[views_api][] = api:3.0

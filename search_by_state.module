@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the search_by_state feature.
+ */
+
+include_once 'search_by_state.features.inc';
