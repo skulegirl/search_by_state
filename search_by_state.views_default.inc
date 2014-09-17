@@ -220,7 +220,7 @@ function search_by_state_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'StateListing';
+  $handler->display->display_options['title'] = 'Boondocking Locations by State';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -239,6 +239,12 @@ function search_by_state_views_default_views() {
     ),
   );
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = 'Below you\'ll find a listing of all of our boondocking locations by country and state. For more detailed search capabilities including the ability to filter based on rig size, etc, please see our <a href=\'/search-boondocking-by-location\'>search by location</a> page.';
+  $handler->display->display_options['header']['area']['format'] = '1';
   /* Relationship: Profile: User uid */
   $handler->display->display_options['relationships']['user']['id'] = 'user';
   $handler->display->display_options['relationships']['user']['table'] = 'profile';
